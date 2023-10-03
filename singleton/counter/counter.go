@@ -3,7 +3,7 @@ package counter
 var instance *Counter
 
 type Counter struct {
-	Value int
+	value int
 }
 
 func New() *Counter {
@@ -13,10 +13,14 @@ func New() *Counter {
 	return instance
 }
 
+func (c *Counter) Value() int {
+	return c.value
+}
+
 func (c *Counter) Increment() {
-	c.Value++
+	c.value++
 }
 
 func (c *Counter) Decrement() {
-	c.Value--
+	c.value--
 }
