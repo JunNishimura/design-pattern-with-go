@@ -1,10 +1,10 @@
 package calculator
 
 type Context struct {
-	strategy Computer
+	strategy Operator
 }
 
-func NewContext(c Computer) *Context {
+func NewContext(c Operator) *Context {
 	return &Context{
 		strategy: c,
 	}

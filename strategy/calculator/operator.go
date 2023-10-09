@@ -1,6 +1,6 @@
 package calculator
 
-type Computer interface {
+type Operator interface {
 	calculate(x, y int) int
 }
 
